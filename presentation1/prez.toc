@@ -1,0 +1,8 @@
+\beamer@sectionintoc {1}{Card Systems in Use}{3}{0}{1}
+\beamer@sectionintoc {2}{Technologies Used}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Magnetic Stripe Cards}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Contact-Based Chips}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{Contactless Chips}{9}{0}{2}
+\beamer@sectionintoc {3}{Transactions}{11}{0}{3}
+\beamer@subsectionintoc {3}{1}{Protocols/Standards}{11}{0}{3}
+\beamer@sectionintoc {4}{Security Systems}{12}{0}{4}

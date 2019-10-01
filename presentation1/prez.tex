@@ -1,0 +1,202 @@
+\documentclass{beamer}
+
+\mode<presentation> {
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Card Payment Systems]{Card Payment Systems} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Akash Diwaker, Harsh Lathi	, Satyam Sachan} % Your name
+\institute[IIT Bhilai] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+IIT Bhilai \\ % Your institution for the title page
+\medskip
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+	\begin{frame}
+	\titlepage 
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+		\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+	\end{frame}
+	
+	\section{Card Systems in Use}
+	\begin{frame}
+		\frametitle{Card Systems in Use}
+		We shall focus on the three most commonly found card payment systems:\\
+		
+		\begin{itemize}
+			\item Credit Cards
+			\item Debit Cards
+			\item Smart Cards
+		\end{itemize}
+		
+	\end{frame}
+	
+	\section{Technologies Used}
+	
+	\begin{frame}
+		\frametitle{Technologies Used}
+		The most common technologies used to carry information on cards are as follows:
+		\begin{itemize}
+			\item Magnetic Stripes
+			\item Contact-Based Chips
+			\item Contactless Chips
+		\end{itemize}
+		The standard \texttt{ISO/IEC 7810} standardizes all the physical properties (such as the dimensions and material) of the cards.
+	\end{frame}
+	
+	\subsection{Magnetic Stripe Cards}
+	\begin{frame}
+		\frametitle{Magnetic Stripe Cards}
+		The implementation of the cards that use the magnetic stripe and corresponding standards used while creating said cards will be disccussed.\\ More particularly, parts 1 through 9 of the standard \texttt{ISO/IEC 7811} will be explained further within the context of the magnetic stripe cards.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Magnetic Stripe Cards}
+		The most relevant standards are as follows:
+		\begin{itemize}
+			\item \texttt{ISO/IEC 7810} Physical characteristics of credit
+			card size document
+			\item \texttt{ISO/IEC 7811-1} Embossing
+			\item \texttt{ISO/IEC 7811-2} Magnetic stripe - low coercivity
+			\item \texttt{ISO/IEC 7811-3} Location of embossed characters
+			\item \texttt{ISO/IEC 7811-4} Location of tracks 1 \& 2
+			\item \texttt{ISO/IEC 7811-5} Location of track 3
+			\item \texttt{ISO/IEC 7811-6} Magnetic stripe - high coercivity
+			\item \texttt{ISO/IEC 7811-7} Magnetic stripe — High coercivity, high density
+			\item \texttt{ISO/IEC 7811-8} Magnetic stripe -- Coercivity of 51.7 kA/m (650 Oersted)
+			\item \texttt{ISO/IEC 7811-9} Tactile identifier mark
+			\item \texttt{ISO/IEC 7813} Financial transaction cards
+		\end{itemize}
+	\end{frame}
+
+
+	\subsection{Contact-Based Chips}
+	\begin{frame}
+		\frametitle{Contact-Based Chips}
+		The implementation of the cards that use embedded chips and the corresponding standards used while manufacturing the cards will be discussed.\\
+		The relevant parts of the standard \texttt{ISO/IEC 7816} will be discussed with respect to the contact-based chips.	
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Contact-Based Chips}
+		The most relevant standards are as follows:
+		\begin{itemize}
+			\item \texttt{ISO/IEC 7810 / 7816-1} Physical characteristics of credit
+			card size document
+			\item \texttt{ISO/IEC 7816-2} Dimensions and location of the contacts
+			\item \texttt{ISO/IEC 7816-3} Electrical interface and transmission protocols
+			\item \texttt{ISO/IEC 7816-4} Organization, security and commands for interchange
+			\item \texttt{ISO/IEC 7816-8} Commands and mechanisms for security operations 
+			\item \texttt{ISO/IEC 7816-9} Commands for card management
+			\item \texttt{ISO/IEC 7816-15} Cryptographic information application
+		\end{itemize}
+	\end{frame}
+	
+	\subsection{Contactless Chips}
+	\begin{frame}
+		\frametitle{Contactless Chips}
+		The implementation of the contactless (proximity and vicinity) cards and the corresponding standards used will be discussed.\\
+		The defining standards \texttt{ISO/IEC 14443} (parts 1-4) and  \texttt{ISO/IEC 15693} will be further expanded upon. 
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Contactless Chips}
+		The most relevant standards are as follows:
+		\begin{itemize}
+			\item \texttt{ISO/IEC 7810} Physical characteristics of credit
+			card size document
+			\item \texttt{ISO/IEC 14443-2} RF Power and signal interface
+			\item \texttt{ISO/IEC 14443-3} Initialization and anticollision
+			\item \texttt{ISO/IEC 14443-4} Transmission protocol
+			\item \texttt{ISO/IEC 15693} Contactless integrated circuit cards - Vicinity cards
+		\end{itemize}
+	\end{frame}
+
+	
+	\section{Transactions}
+	
+	\subsection{Protocols/Standards}
+	\begin{frame}
+		\frametitle{Transaction Protocols}
+		The transaction protocols and standards specified for the above mentioned technologies and the respective PoS devices will be explained.\\
+		The standard \texttt{ISO/IEC 8583} (the standard that financial organizations
+		use to communicate and complete card transactions whether from an ATM, a PoS device, on the Internet or on a mobile network) will be discussed.
+	\end{frame}
+	
+	
+	\section{Security Systems}
+	
+	\begin{frame}
+		\frametitle{Security Systems}
+		The main focus of this section are the TLS/SSL (Transport Layer Security/Secure Socket Layer) protocols. These are used to secure exchanges in the transport layer of all parties in the transaction (the term 'transport layer' is from the TCP/IP layer model in networking where logical divisions are made to divide the tasks performed on the actual data before/when it is sent).
+	\end{frame}
+	
+	
+	
+	
+\end{document}

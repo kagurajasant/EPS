@@ -1,0 +1,4 @@
+Security Sys: Mustafa {5 (TLS), 7(SET)} TBD: crypto in-chip
+
+Transaction Protocols: Mustafa {8 (8583)} TBD: alternate protocols
+
